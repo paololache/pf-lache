@@ -1,0 +1,18 @@
+//base
+@import "base/vars";
+
+@import "base/reset";
+
+
+//components
+@import "components/navbar";
+@import "components/carousel";
+@import "components/galery";
+@import "components/footer";
+
+//layout
+@import "layout/index";
+@import "layout/contacto";
+@import "layout/mediaqueries";
+
+@import "base/utilities";
