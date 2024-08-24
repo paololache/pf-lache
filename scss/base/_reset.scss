@@ -4,7 +4,13 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
+  //Fuente del navbar
+  .nav-item, .navlink {
+        font-family: $font-main;
+        font-weight: 300;
+        font-style: normal;  
+  }
+
   body {
     background-color: $color-black;
     color: $color-white;

@@ -1,0 +1,43 @@
+/* Propiedades del catalogo */
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2em;
+}
+.catalog .card {
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.catalog .card-img-top {
+    object-fit: cover;
+    height: 200px; /* Ajusta la altura según sea necesario */
+}
+.catalog .card-body {
+    padding: 1.5rem;
+}
+.catalog .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.catalog .card-text {
+    font-size: 1rem;
+    color: #555;
+}
+.catalog .btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.catalog .btn-primary:hover {
+    background-color: #0056b3;
+}
+.catalog .btn-primary {
+    background-color: #050505; /* Cambia este valor al color deseado para el fondo del botón */
+    border: none; /* Elimina el borde si es necesario */
+    color: #fff; /* Cambia el color del texto del botón */
+}
+.catalog .btn-primary:hover {
+    background-color: #7bc88c; /* Cambia este valor al color deseado para el fondo del botón en estado hover */
+    color: #fff; /* Asegúrate de que el color del texto sea legible sobre el nuevo color de fondo */
+}

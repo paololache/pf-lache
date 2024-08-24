@@ -1,0 +1,12 @@
+form .btn-primary {
+    background-color: #050505; /* Color de fondo del botón */
+    border: none; /* Elimina el borde del botón */
+    color: #fff; /* Color del texto del botón */
+    border-radius: 0.25rem; /* Bordes redondeados del botón */
+    padding: 0.75rem 1.5rem; /* Espaciado interno del botón */
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+form .btn-primary:hover {
+    background-color: #7bc88c; /* Color de fondo en estado hover */
+    color: #fff; /* Color del texto en estado hover */
+}

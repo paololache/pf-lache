@@ -1,5 +1,26 @@
 @media (max-width: 767.98px) {
     .navbar-brand img {
-      max-width: 130px; /* Tamaño del logo en dispositivos móviles */
+      max-width: 140px; /* Tamaño del logo en dispositivos móviles */
     }
   }
+
+
+  @media (max-width: 767.98px) {
+    .nav-item a {
+        font-weight: 200;   /* Tamaño de letra en dispositivos móviles */
+        font-style: normal;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .carousel-inner .carousel-item {
+        width: 100%;
+        height: 400px;
+        img {
+            width: 100%;
+            height: 200%;
+            object-fit: cover;
+        }
+    }
+  }
+  

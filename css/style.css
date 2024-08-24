@@ -6,6 +6,12 @@
   box-sizing: border-box;
 }
 
+.nav-item, .navlink {
+  font-family: "Popins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
 body {
   background-color: rgb(41, 45, 41);
   color: rgb(238, 219, 219);
@@ -28,9 +34,206 @@ img {
   height: auto;
 }
 
+.carousel-inner,
+.carousel-item {
+  width: 100%;
+  height: 800px;
+}
+.carousel-inner img,
+.carousel-item img {
+  width: 100%;
+  height: 190%;
+  object-fit: cover;
+}
+
+/* Propiedad Carrusel */
+.carousel-item img {
+  max-height: 600px; /* Altura máxima para las imágenes */
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+  object-fit: cover; /* Ajusta la imagen para llenar el contenedor sin distorsionar */
+  object-position: center; /* Centra la imagen */
+}
+
+.carousel-caption h5 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.carousel-caption p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Propiedades del catalogo */
+.catalogo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2em;
+}
+
+.catalog .card {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.catalog .card-img-top {
+  object-fit: cover;
+  height: 200px; /* Ajusta la altura según sea necesario */
+}
+
+.catalog .card-body {
+  padding: 1.5rem;
+}
+
+.catalog .card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.catalog .card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+.catalog .btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.catalog .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.catalog .btn-primary {
+  background-color: #050505; /* Cambia este valor al color deseado para el fondo del botón */
+  border: none; /* Elimina el borde si es necesario */
+  color: #fff; /* Cambia el color del texto del botón */
+}
+
+.catalog .btn-primary:hover {
+  background-color: #7bc88c; /* Cambia este valor al color deseado para el fondo del botón en estado hover */
+  color: #fff; /* Asegúrate de que el color del texto sea legible sobre el nuevo color de fondo */
+}
+
+/* Propiedad Testimonios */
+.testimonials .card {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.testimonials .card-body {
+  padding: 2rem;
+}
+
+.testimonials .card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.testimonials .card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+.testimonials img {
+  border: 2px solid #e9ecef;
+  padding: 5px;
+  background-color: #fff;
+}
+
+form .btn-primary {
+  background-color: #050505; /* Color de fondo del botón */
+  border: none; /* Elimina el borde del botón */
+  color: #fff; /* Color del texto del botón */
+  border-radius: 0.25rem; /* Bordes redondeados del botón */
+  padding: 0.75rem 1.5rem; /* Espaciado interno del botón */
+  transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+
+form .btn-primary:hover {
+  background-color: #7bc88c; /* Color de fondo en estado hover */
+  color: #fff; /* Color del texto en estado hover */
+}
+
+/* Propiedades del catalogo */
+.catalogo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2em;
+}
+
+.catalog .card {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.catalog .card-img-top {
+  object-fit: cover;
+  height: 200px; /* Ajusta la altura según sea necesario */
+}
+
+.catalog .card-body {
+  padding: 1.5rem;
+}
+
+.catalog .card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.catalog .card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+.catalog .btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.catalog .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.catalog .btn-primary {
+  background-color: #050505; /* Cambia este valor al color deseado para el fondo del botón */
+  border: none; /* Elimina el borde si es necesario */
+  color: #fff; /* Cambia el color del texto del botón */
+}
+
+.catalog .btn-primary:hover {
+  background-color: #7bc88c; /* Cambia este valor al color deseado para el fondo del botón en estado hover */
+  color: #fff; /* Asegúrate de que el color del texto sea legible sobre el nuevo color de fondo */
+}
+
 @media (max-width: 767.98px) {
   .navbar-brand img {
-    max-width: 130px; /* Tamaño del logo en dispositivos móviles */
+    max-width: 140px; /* Tamaño del logo en dispositivos móviles */
+  }
+}
+@media (max-width: 767.98px) {
+  .nav-item a {
+    font-weight: 200; /* Tamaño de letra en dispositivos móviles */
+    font-style: normal;
+  }
+}
+@media (max-width: 767.98px) {
+  .carousel-inner .carousel-item {
+    width: 100%;
+    height: 400px;
+  }
+  .carousel-inner .carousel-item img {
+    width: 100%;
+    height: 200%;
+    object-fit: cover;
   }
 }
 
