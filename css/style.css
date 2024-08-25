@@ -13,8 +13,8 @@
 }
 
 body {
-  background-color: rgb(41, 45, 41);
-  color: rgb(238, 219, 219);
+  background-color: black;
+  color: white;
 }
 
 h1,
@@ -42,18 +42,11 @@ img {
 .carousel-inner img,
 .carousel-item img {
   width: 100%;
-  height: 190%;
+  height: auto;
   object-fit: cover;
 }
 
 /* Propiedad Carrusel */
-.carousel-item img {
-  max-height: 600px; /* Altura máxima para las imágenes */
-  width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
-  object-fit: cover; /* Ajusta la imagen para llenar el contenedor sin distorsionar */
-  object-position: center; /* Centra la imagen */
-}
-
 .carousel-caption h5 {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
@@ -149,17 +142,17 @@ img {
 }
 
 form .btn-primary {
-  background-color: #050505; /* Color de fondo del botón */
+  background-color: black; /* Color de fondo del botón */
   border: none; /* Elimina el borde del botón */
-  color: #fff; /* Color del texto del botón */
+  color: white; /* Color del texto del botón */
   border-radius: 0.25rem; /* Bordes redondeados del botón */
   padding: 0.75rem 1.5rem; /* Espaciado interno del botón */
   transition: background-color 0.3s; /* Transición suave para el color de fondo */
 }
 
 form .btn-primary:hover {
-  background-color: #7bc88c; /* Color de fondo en estado hover */
-  color: #fff; /* Color del texto en estado hover */
+  background-color: #3C3C3C; /* Color de fondo en estado hover */
+  color: white; /* Color del texto en estado hover */
 }
 
 /* Propiedades del catalogo */
@@ -214,25 +207,25 @@ form .btn-primary:hover {
   color: #fff; /* Asegúrate de que el color del texto sea legible sobre el nuevo color de fondo */
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
   .navbar-brand img {
     max-width: 140px; /* Tamaño del logo en dispositivos móviles */
   }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
   .nav-item a {
     font-weight: 200; /* Tamaño de letra en dispositivos móviles */
     font-style: normal;
   }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
   .carousel-inner .carousel-item {
     width: 100%;
     height: 400px;
   }
   .carousel-inner .carousel-item img {
     width: 100%;
-    height: 200%;
+    height: 140%;
     object-fit: cover;
   }
 }
