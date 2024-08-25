@@ -1,6 +1,6 @@
 /* Propiedad Testimonios */
 .testimonials .card {
-    border-radius: 1rem;
+    border-radius: none;
     overflow: hidden;
 }
 .testimonials .card-body {
@@ -12,10 +12,10 @@
 }
 .testimonials .card-text {
     font-size: 1rem;
-    color: #555;
+    color: $color-black;
 }
 .testimonials img {
-    border: 2px solid #e9ecef;
+    border: solid #e9ecef;
     padding: 5px;
-    background-color: #fff;
+    background-color: $color-black;
 }

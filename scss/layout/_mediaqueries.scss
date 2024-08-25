@@ -1,9 +1,33 @@
-@media (max-width: 768px) {
+  @media  (max-width: 768px) {
+    .navbar {
+      padding: 10px;
+
+    }
+    
+    .navbar-brand {
+      display: flex;
+      // width: 100%;
+    }
+
+    img {
+      justify-content: center;
+      padding: 10px;
+    }
+
     .navbar-brand img {
-      max-width: 140px; /* Tamaño del logo en dispositivos móviles */
+        max-width: 200px;  /* Tamaño del logo en dispositivos móviles */
+        height: auto;
+    }
+   
+    .navbar-toggler {
+      margin-right: 1px; /* Ajusta este valor según la separación que desees */
+    }
+   
+    .navbar-nav .nav-link {
+      padding: 1px 2px; /* Ajusta el espacio entre los enlaces del menú */
+
     }
   }
-
 
   @media (max-width: 768px) {
     .nav-item a {

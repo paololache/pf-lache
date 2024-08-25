@@ -1,8 +1,15 @@
+ //Fuente del navbar
+ .nav-item, .navlink {
+    font-family: $font-main;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+}
 img {
     justify-content: center;
-    padding: 10px
+    padding: 35px
 }
 .navbar-brand img {
-    max-width: 40%;
+    max-width: 300px;
     height: auto;
 }

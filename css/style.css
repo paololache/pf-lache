@@ -6,15 +6,12 @@
   box-sizing: border-box;
 }
 
-.nav-item, .navlink {
-  font-family: "Popins", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
 body {
-  background-color: black;
-  color: white;
+  background-color: #F5F5F5;
+  color: #181818;
+}
+body p {
+  font-family: "Popins", sans-serif;
 }
 
 h1,
@@ -24,13 +21,20 @@ h4 {
   font-family: "Popins", sans-serif;
 }
 
+.nav-item, .navlink {
+  font-family: "Popins", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+}
+
 img {
   justify-content: center;
-  padding: 10px;
+  padding: 35px;
 }
 
 .navbar-brand img {
-  max-width: 40%;
+  max-width: 300px;
   height: auto;
 }
 
@@ -117,7 +121,7 @@ img {
 
 /* Propiedad Testimonios */
 .testimonials .card {
-  border-radius: 1rem;
+  border-radius: none;
   overflow: hidden;
 }
 
@@ -132,19 +136,19 @@ img {
 
 .testimonials .card-text {
   font-size: 1rem;
-  color: #555;
+  color: #181818;
 }
 
 .testimonials img {
-  border: 2px solid #e9ecef;
+  border: solid #e9ecef;
   padding: 5px;
-  background-color: #fff;
+  background-color: #181818;
 }
 
 form .btn-primary {
-  background-color: black; /* Color de fondo del botón */
+  background-color: #181818; /* Color de fondo del botón */
   border: none; /* Elimina el borde del botón */
-  color: white; /* Color del texto del botón */
+  color: #F5F5F5; /* Color del texto del botón */
   border-radius: 0.25rem; /* Bordes redondeados del botón */
   padding: 0.75rem 1.5rem; /* Espaciado interno del botón */
   transition: background-color 0.3s; /* Transición suave para el color de fondo */
@@ -152,7 +156,7 @@ form .btn-primary {
 
 form .btn-primary:hover {
   background-color: #3C3C3C; /* Color de fondo en estado hover */
-  color: white; /* Color del texto en estado hover */
+  color: #F5F5F5; /* Color del texto en estado hover */
 }
 
 /* Propiedades del catalogo */
@@ -207,9 +211,88 @@ form .btn-primary:hover {
   color: #fff; /* Asegúrate de que el color del texto sea legible sobre el nuevo color de fondo */
 }
 
+/* Propiedades del blog */
+.blog-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.blog-titulo {
+  text-align: center;
+}
+
+.blog-entrada {
+  width: 300px;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-contenido {
+  padding: 15px;
+}
+
+.blog-contenido h2 {
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+.blog-contenido .fecha {
+  color: #666;
+  font-size: 0.9em;
+  margin-bottom: 1em;
+}
+
+.blog-contenido p {
+  line-height: 1.6;
+}
+
+.img-blog {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.blog-contenido .leermas {
+  display: inline-block;
+  background-color: #050505;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+
+.blog-contenido .leermas:hover {
+  background-color: #7bc88c;
+}
+
 @media (max-width: 768px) {
+  .navbar {
+    padding: 10px;
+  }
+  .navbar-brand {
+    display: flex;
+  }
+  img {
+    justify-content: center;
+    padding: 10px;
+  }
   .navbar-brand img {
-    max-width: 140px; /* Tamaño del logo en dispositivos móviles */
+    max-width: 200px; /* Tamaño del logo en dispositivos móviles */
+    height: auto;
+  }
+  .navbar-toggler {
+    margin-right: 1px; /* Ajusta este valor según la separación que desees */
+  }
+  .navbar-nav .nav-link {
+    padding: 1px 2px; /* Ajusta el espacio entre los enlaces del menú */
   }
 }
 @media (max-width: 768px) {
