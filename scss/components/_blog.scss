@@ -40,13 +40,13 @@
 }
 .blog-contenido .leermas {
     display: inline-block;
-    background-color: #050505;
-    color: #fff;
+    background-color: $color-black;
+    color: $color-white;
     text-decoration: none;
     padding: 0.5em 1em;
     border-radius: 3px;
     margin-top: 10px;
 }
 .blog-contenido .leermas:hover {
-    background-color: #7bc88c;
+    background-color: none;
 }
