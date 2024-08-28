@@ -1,20 +1,20 @@
 /* Propiedad Testimonios */
-.testimonials .card {
+.testimonio .card {
     border-radius: none;
     overflow: hidden;
 }
-.testimonials .card-body {
+.testimonio .card-body {
     padding: 2rem;
 }
-.testimonials .card-title {
+.testimonio .card-title {
     font-size: 1.25rem;
     font-weight: bold;
 }
-.testimonials .card-text {
+.testimonio .card-text {
     font-size: 1rem;
     color: $color-black;
 }
-.testimonials img {
+.testimonio img {
     border: solid $color-white;
     padding: 5px;
     background-color: $color-black;

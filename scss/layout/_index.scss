@@ -1,3 +1,4 @@
+//Sección portada
 .hero-section {
   position: relative;
   width: 100%;
@@ -42,6 +43,7 @@
   }
 }
 
+// Sección nosotros
 .seccion-nosotros {
   display: flex;
   align-items: center;
@@ -62,7 +64,7 @@
 
   // Estilo para el contenido textual
   .contenido-texto {
-      width: 45%;
+      width: 30%;
       text-align: left;
 
       h1 {

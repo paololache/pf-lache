@@ -1,39 +1,135 @@
-  @media  (max-width: 768px) {
-    .navbar {
-      padding: 10px;
-      .navbar-brand {
-        display: flex;
+@media  (max-width: 768px) {
+   .navbar {
+     padding: 10px;
+   .navbar-brand {
+     display: flex;
         // width: 100%;
       }
-      img {
+   img {
         justify-content: center;
         padding: 10px;
       }
-      .navbar-brand img {
+   .navbar-brand img {
           max-width: 200px;  /* Tamaño del logo en dispositivos móviles */
           height: auto;
       }
-
-    }
-   
-  }
-
-  @media (max-width: 768px) {
-    .nav-item a {
-        font-weight: 200;   /* Tamaño de letra en dispositivos móviles */
-        font-style: normal;
     }
   }
 
+
   @media (max-width: 768px) {
-    .carousel-inner .carousel-item {
-        width: 100%;
-        height: 400px;
-        img {
-            width: 100%;
-            height: 140%;
-            object-fit: cover;
+    .hero-section {
+      height: auto; // Ajusta la altura para dispositivos móviles
+  
+      .hero-content {
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        z-index: 2;
+        //padding: 10px; // Añadir padding para asegurar un buen margen interno
+        //text-align: center; // Centramos el texto en dispositivos móviles
+        
+        .hero-tagline {
+          font-family: $font-main;
+          font-size: 1.2rem; 
+          margin-bottom: 1rem;
+          color: $color-black; 
         }
+  
+        .hero-title {
+          font-family: $font-main;
+          font-size: 4rem; 
+          line-height: 0.8;
+          font-weight: bold;
+          color: $color-black; // Color del texto
+        }
+      }
+  
+      .hero-image {
+        position: relative;
+        height: auto; // Permite que la imagen se ajuste según su contenido
+  
+        img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+          filter: brightness(80%);
+        }
+      }
+    }
+  
+    .nav-item a {
+      font-size: 14px; // Ajustamos el tamaño de fuente en la navegación
+      font-weight: normal; // Ajustamos el peso de la fuente
     }
   }
   
+@media (max-width: 768px) {
+  .carousel-inner .carousel-item {
+    width: 100%;
+    height: 400px;
+    img {
+        width: 100%;
+        height: 140%;
+        object-fit: cover;
+    }
+  }
+
+}
+
+    
+  // Media Queri de Sección Nosotros
+
+  @media (max-width: 768px) {
+    .seccion-nosotros {
+      display: flex;
+      flex-direction: column;
+      
+
+      .contenedor-imagen {
+        width: 100%;
+        // margin-bottom: 30px;
+        img {
+          width: 100%;
+          height: auto;
+          margin-bottom: 10px;
+        }
+      }
+      .contenido-texto {
+        width: 100%;
+        h1 {
+            text-align: center;
+
+        }
+        p {
+            text-align: justify;
+            padding: 20px;
+        }
+
+      }
+
+    }
+  }
+
+// Footer responsivo para pantallas medianas y pequeñas
+
+@media (max-width: 1200px) and (min-width: 768px) {
+  .footer {
+    &__container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;  
+      padding: 30px;
+    }
+  }
+}
+
+
+@media (max-width: 767px) {
+  .footer {
+    &__container {
+      display: none
+    }
+  }
+}
