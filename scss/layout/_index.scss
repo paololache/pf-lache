@@ -44,37 +44,58 @@
 }
 
 // Sección nosotros
+/* Estilos principales para la sección "Nosotros" */
 .seccion-nosotros {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  // padding: $padding-seccion;
-  background-color: $color-white;
+  //padding: 20px;
+  background-color: #fff; /* Ajusta según el diseño */
+}
 
-  // Estilo para la imagen
-  .contenedor-imagen {
-      width: 50%;
-      
-      img {
-          width: 100%;
-          height: auto;
-          object-fit: cover;
-      }
-  }
+/* Estilo para el contenedor de la imagen */
+.seccion-nosotros .contenedor-imagen {
+  width: 50%;
+}
+
+.seccion-nosotros .contenedor-imagen img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Estilo para el contenido de texto */
+.seccion-nosotros .contenido-texto {
+  width: 50%;
+  //padding-left: 20px;
+  text-align: left;
+}
+
+.seccion-nosotros .contenido-texto h1 {
+  font-size: 2rem;
+  color: #000; /* Ajusta según el diseño */
+}
+
+.seccion-nosotros .contenido-texto p {
+  font-size: 1rem;
+  color: #333; /* Ajusta según el diseño */
+  margin-bottom: 15px;
+}
 
   // Estilo para el contenido textual
-  .contenido-texto {
-      width: 30%;
-      text-align: left;
+.contenido-texto {
+    width: 50%;
+    text-align: left;
+    padding-left: 10px;
 
-      h1 {
+    h1 {
           // font-size: $font-size-h1;
           color: $color-black;
-      }
+    }
 
-      p {
+    p {
           // font-size: $font-size-p;
           color: $color-black;
-      }
+          font-size: 20px;
+    }
   }
-}

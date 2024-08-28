@@ -57,8 +57,7 @@
         }
       }
     }
-  
-    .nav-item a {
+      .nav-item a {
       font-size: 14px; // Ajustamos el tamaño de fuente en la navegación
       font-weight: normal; // Ajustamos el peso de la fuente
     }
@@ -82,32 +81,28 @@
 
   @media (max-width: 768px) {
     .seccion-nosotros {
-      display: flex;
       flex-direction: column;
-      
-
-      .contenedor-imagen {
-        width: 100%;
-        // margin-bottom: 30px;
-        img {
-          width: 100%;
-          height: auto;
-          margin-bottom: 10px;
-        }
-      }
-      .contenido-texto {
-        width: 100%;
-        h1 {
-            text-align: center;
-
-        }
-        p {
-            text-align: justify;
-            padding: 20px;
-        }
-
-      }
-
+      padding: 10px;
+    }
+  
+    .seccion-nosotros .contenedor-imagen,
+    .seccion-nosotros .contenido-texto {
+      width: 100%;
+      padding-left: 0;
+      text-align: center;
+    }
+  
+    .seccion-nosotros .contenido-texto {
+      padding-top: 20px;
+      justify-content: center;
+    }
+  
+    .seccion-nosotros .contenido-texto h1 {
+      font-size: 1.5rem;
+    }
+  
+    .seccion-nosotros .contenido-texto p {
+      font-size: 0.9rem;
     }
   }
 
