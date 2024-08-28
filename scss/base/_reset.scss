@@ -19,3 +19,7 @@ h3,
 h4,p {
     font-family: $font-main;
 }
+
+html {
+    scroll-behavior: smooth;
+  }

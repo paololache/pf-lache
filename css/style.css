@@ -20,6 +20,10 @@ h4, p {
   font-family: "Quicksand", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .navbar {
   padding: 30px;
 }
@@ -36,7 +40,7 @@ h4, p {
 .nav-item, .navlink {
   font-family: "Quicksand", sans-serif;
   font-weight: 380;
-  font-size: 25px;
+  font-size: 20px;
   font-style: normal;
 }
 
@@ -275,34 +279,147 @@ form .btn-primary:hover {
   background-color: none;
 }
 
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.hero .box_header {
-  width: 30%;
+.hero-section {
   position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
-.hero .box_header h1 {
-  font-size: 50px;
-  padding-left: 80px;
+.hero-section .hero-content {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  z-index: 2;
+  color: #000;
 }
-.hero .box_header p {
-  font-weight: 300;
-  font-size: 30px;
-  padding-left: 30px;
+.hero-section .hero-content .hero-tagline {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #000;
 }
-.hero_img {
-  width: 70%;
-  height: 900px;
-  transition: 0.5s;
+.hero-section .hero-content .hero-title {
+  font-family: "Quicksand", sans-serif;
+  font-size: 6rem;
+  line-height: 0.8;
+  font-weight: bold;
+  color: #000;
 }
-.hero_img img {
+.hero-section .hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.hero-section .hero-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: 0.5s;
+  filter: brightness(80%);
+}
+
+.seccion-nosotros {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.seccion-nosotros .contenedor-imagen {
+  width: 50%;
+}
+.seccion-nosotros .contenedor-imagen img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.seccion-nosotros .contenido-texto {
+  width: 45%;
+  text-align: left;
+}
+.seccion-nosotros .contenido-texto h1 {
+  color: #000;
+}
+.seccion-nosotros .contenido-texto p {
+  color: #000;
+}
+
+.contact-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.contact-page h1, .contact-page h2 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.contact-page .join-us {
+  margin-bottom: 40px;
+}
+.contact-page .join-us .disclaimer {
+  font-style: italic;
+}
+.contact-page .join-us .allergy-info {
+  font-size: 0.9em;
+  margin-top: 20px;
+}
+.contact-page .location {
+  margin-bottom: 40px;
+}
+.contact-page .location address {
+  margin-bottom: 20px;
+}
+.contact-page .location .get-directions {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.contact-page .contact-us .note {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.contact-page .contact-us .contact-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.contact-page .contact-us .contact-info .email {
+  color: #000;
+  text-decoration: none;
+}
+.contact-page .contact-us .contact-info .social-icons a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 10px;
+}
+.contact-page .contact-us .contact-form .form-group {
+  margin-bottom: 20px;
+}
+.contact-page .contact-us .contact-form .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+.contact-page .contact-us .contact-form .form-group input, .contact-page .contact-us .contact-form .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  background-color: #000;
+  border: none;
+}
+.contact-page .contact-us .contact-form .form-group textarea {
+  height: 150px;
+}
+.contact-page .contact-us .contact-form .send-button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
 }
 
 @media (max-width: 768px) {

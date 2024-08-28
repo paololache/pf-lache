@@ -39,7 +39,7 @@
                       <a class="nav-link" href="blog.html">BLOG</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="about.html">NOSOTROS</a>
+                    <a class="nav-link" href="../index.html#nosotros">NOSOTROS</a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link active" href="contactus.html">CONTACTO</a>
@@ -50,48 +50,57 @@
           </div>
         </nav>
   </header>
-  <footer>
-    <section class="bg-white text-black m-0 p-4">
-        <div class="container">
-            <div class="row">
-                <!-- Sección de información de contacto -->
-                <div class="col-md-4 mb-3">
-                    <h5>Contacto</h5>
-                    <p><i class="fas fa-map-marker-alt"></i> Calle Falsa 123, Lima, Perú</p>
-                    <p><i class="fas fa-phone"></i> +123 456 7890</p>
-                    <p><i class="fas fa-envelope"></i> contacto@velacrea.com</p>
-                </div>
-    
-                <!-- Sección de enlaces rápidos -->
-                <div class="col-md-4 mb-3">
-                    <h5>Enlaces Rápidos</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="../index.html" class="text-black">Inicio</a></li>
-                        <li><a href="catalogo.html" class="text-black">Catálogo</a></li>
-                        <li><a href="blog.html" class="text-black">Blog</a></li>
-                        <li><a href="contactus.html" class="text-black">Contacto</a></li>
-                        <li><a href="about.html" class="text-black">Nosotros</a></li>
-                    </ul>
-                </div>
-                <!-- Sección de redes sociales -->
-                <div class="col-md-4 mb-3">
-                    <h5>Síguenos en:</h5>
-                    <a href="#" class="text-black me-2"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="text-black me-2"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="text-black me-2"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="text-black me-2"><i class="fab fa-pinterest"></i></a>
-                </div>
-            </div>
-            <!-- Sección inferior del footer -->
-            <div class="row">
-                <div class="col-12 text-center mt-3">
-                    <p>&copy; 2024 Vela Crea. Todos los derechos reservados.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <main>
+    <main class="contact-page">
+      <section class="join-us">
+          <h1>QUIERES UNIRTE A NUESTRA COMUNIDAD</h1>
+          <p>We hand craft each item sold at our Bakehouse, creating small batches to preserve quality which means we close our doors once we sell out.</p>
+          <p class="allergy-info">*Please be advised that all food is prepared in a facility which includes products made with gluten, dairy, peanuts and tree nuts*</p>
+      </section>
 
-</footer>
+      <section class="location">
+          <h2>OUR LOCATION</h2>
+          <address>
+            Calle Falsa 123, Lima, Perú<br>
+              Abbotsford, BC<br>
+              V2S 3T6
+          </address>
+          <button class="get-directions">GET DIRECTIONS</button>
+      </section>
+
+      <section class="contact-us">
+          <h2>CONTACT US</h2>
+          <p>Envianos un mensaje por email o nuestras redes sociales. Gustosamente nos contactaremos contigo.</p>
+          <p class="note">NOTE: We do not take orders via email or social media.</p>
+          <div class="contact-info">
+              <a href="mailto:contacto@velacrea.com" class="email">contacto@velacrea.com</a>
+              <div class="social-icons">
+                  <a href="#" class="instagram">Instagram</a>
+                  <a href="#" class="facebook">Facebook</a>
+              </div>
+          </div>
+          <form class="contact-form">
+              <div class="form-group">
+                  <label for="name">YOUR NAME</label>
+                  <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                  <label for="email">YOUR EMAIL</label>
+                  <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                  <label for="phone">PHONE</label>
+                  <input type="tel" id="phone" name="phone">
+              </div>
+              <div class="form-group">
+                  <label for="message">MESSAGE</label>
+                  <textarea id="message" name="message" required></textarea>
+              </div>
+              <button type="submit" class="send-button">SEND</button>
+          </form>
+      </section>
+  </main>
+  
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
