@@ -1,9 +1,7 @@
 //base
 @import "base/vars";
-
 @import "base/reset";
-
-
+@import "base/utilities";
 //components
 @import "components/navbar";
 @import "components/carousel";
@@ -20,4 +18,3 @@
 @import "layout/contacto";
 @import "layout/mediaqueries";
 
-@import "base/utilities";

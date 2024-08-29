@@ -1,0 +1,9 @@
+// Mixin
+@mixin button-style {
+    background-color: $color-black;
+    color: $color-white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}

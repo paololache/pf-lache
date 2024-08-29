@@ -14,14 +14,14 @@
 
       .hero-tagline {
           font-family: $font-main;
-          font-size: 1.5rem; 
+          font-size: 2.7rem; 
           margin-bottom: 1rem;
           color: $color-black; 
       }
 
       .hero-title {
           font-family: $font-main;
-          font-size: 6rem; 
+          font-size: 6.5rem; 
           line-height: 0.8;
           font-weight: bold;
           color: $color-black; // Color del texto
@@ -44,58 +44,45 @@
 }
 
 // Sección nosotros
-/* Estilos principales para la sección "Nosotros" */
+
 .seccion-nosotros {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  //padding: 20px;
-  background-color: #fff; /* Ajusta según el diseño */
-}
+  padding: 0;
+  background-color: $color-white;
 
-/* Estilo para el contenedor de la imagen */
-.seccion-nosotros .contenedor-imagen {
-  width: 50%;
-}
+  .contenedor-imagen {
+    width: 45%;
 
-.seccion-nosotros .contenedor-imagen img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
 
-/* Estilo para el contenido de texto */
-.seccion-nosotros .contenido-texto {
-  width: 50%;
-  //padding-left: 20px;
-  text-align: left;
-}
-
-.seccion-nosotros .contenido-texto h1 {
-  font-size: 2rem;
-  color: #000; /* Ajusta según el diseño */
-}
-
-.seccion-nosotros .contenido-texto p {
-  font-size: 1rem;
-  color: #333; /* Ajusta según el diseño */
-  margin-bottom: 15px;
-}
-
-  // Estilo para el contenido textual
-.contenido-texto {
+  .contenido-texto {
     width: 50%;
-    text-align: left;
-    padding-left: 10px;
+    // padding-left: 10px;
+    display: block;
+    
 
     h1 {
-          // font-size: $font-size-h1;
-          color: $color-black;
+      font-size: 2.5rem;
+      color: $color-black; // Ajusta el color según tu diseño}
+      margin-bottom: 10px;
+      text-align: center;
     }
 
     p {
-          // font-size: $font-size-p;
-          color: $color-black;
-          font-size: 20px;
+      font-size: 1.5rem;
+      color: $color-black; // Ajusta el color según tu diseño
+      padding-right: 60px;
+      margin-bottom: 8px;
+      line-height: 2;
+      text-align: justify;
+
     }
   }
+}

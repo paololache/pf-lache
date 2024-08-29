@@ -7,7 +7,7 @@ form .btn-primary {
     transition: background-color 0.3s; /* Transición suave para el color de fondo */
 }
 form .btn-primary:hover {
-    background-color: #3C3C3C; /* Color de fondo en estado hover */
+    background-color: #666; /* Color de fondo en estado hover */
     color: $color-white; /* Color del texto en estado hover */
 }
 

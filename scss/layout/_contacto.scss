@@ -1,15 +1,4 @@
 
-// Mixins
-@mixin button-style {
-    background-color: $color-black;
-    color: $color-white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    text-transform: uppercase;
-}
-
-
 .contact-page {
     max-width: 800px;
     margin: 0 auto;
