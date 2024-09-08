@@ -12,14 +12,18 @@
         height: auto;
         justify-content: center;
     }
+    a {
+        text-decoration: none;
+        font-family: $font-main;
+        font-weight: 550;
+        font-size: 22px;
+        font-style: bold;   
 
-}
-
-.nav-item, .navlink {
-    font-family: $font-main;
-    font-weight: 380;
-    font-size: 20px;
-    font-style: normal;
+        &:hover{
+            color: #9a9a9a;
+            //text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);        
+        }
+    }
 }
 
 
