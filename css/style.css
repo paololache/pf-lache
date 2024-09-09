@@ -332,6 +332,26 @@ form .btn-primary:hover {
   height: 100vh;
   overflow: hidden;
 }
+.hero-section .hero-content {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  z-index: 2;
+  color: #000;
+}
+.hero-section .hero-content .hero-tagline {
+  font-family: "Quicksand", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #000;
+}
+.hero-section .hero-content .hero-title {
+  font-family: "Quicksand", sans-serif;
+  font-size: 6rem;
+  line-height: 0.8;
+  font-weight: bold;
+  color: #000;
+}
 .hero-section .hero-image {
   position: absolute;
   top: 0;
@@ -344,26 +364,6 @@ form .btn-primary:hover {
   height: 100%;
   object-fit: cover;
   filter: brightness(80%);
-}
-.hero-section .hero-content {
-  position: absolute;
-  top: 10%;
-  left: 5%;
-  z-index: 2;
-  color: #000;
-}
-.hero-section .hero-content .hero-tagline {
-  font-family: "Quicksand", sans-serif;
-  font-size: 2.7rem;
-  margin-bottom: 1rem;
-  color: #000;
-}
-.hero-section .hero-content .hero-title {
-  font-family: "Quicksand", sans-serif;
-  font-size: 6.5rem;
-  line-height: 0.8;
-  font-weight: bold;
-  color: #000;
 }
 
 .seccion-nosotros {
@@ -498,21 +498,8 @@ form .btn-primary:hover {
   .hero-section {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     overflow: hidden;
-  }
-  .hero-section .hero-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  .hero-section .hero-image img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    filter: brightness(80%);
   }
   .hero-section .hero-content {
     position: absolute;
@@ -523,7 +510,7 @@ form .btn-primary:hover {
   }
   .hero-section .hero-content .hero-tagline {
     font-family: "Quicksand", sans-serif;
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-bottom: 1rem;
     color: #000;
   }
@@ -534,9 +521,18 @@ form .btn-primary:hover {
     font-weight: bold;
     color: #000;
   }
-  .nav-item a {
-    font-size: 20px;
-    font-weight: normal;
+  .hero-section .hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+  }
+  .hero-section .hero-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    filter: brightness(80%);
   }
 }
 @media (max-width: 768px) {
